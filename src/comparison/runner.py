@@ -1,6 +1,6 @@
 """
-Automated comparison runner for vanilla vs. BAML agents.
-This module runs both agents on identical test data and collects comprehensive metrics.
+Comparison runner for Pipechat + BAML vs Vanilla prompting.
+This module orchestrates the comparison between the two approaches.
 """
 import asyncio
 import time
@@ -11,8 +11,8 @@ from datetime import datetime
 
 from src.agents.vanilla_agent import VanillaFactCheckerAgent
 from src.agents.baml_agent import BAMLFactCheckerAgent
-from src.utils.metrics import MetricsCollector
-from src.tests.test_data import TestData
+from src.utils.metrics import MetricsCollector, AgentMetrics
+from tests.test_data import TestData
 from src.config.settings import settings
 
 
