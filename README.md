@@ -57,7 +57,7 @@ metrics/                      # Collected performance metrics
 
 1. **Install dependencies**
    ```bash
-   pip install -r requirements.txt
+   pip install -r requirements-noaudio.txt
    ```
 
 2. **Create .env (Gemini only)**

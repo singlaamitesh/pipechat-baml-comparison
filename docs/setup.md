@@ -56,8 +56,8 @@ which python  # Should point to venv/bin/python
 # Upgrade pip
 pip install --upgrade pip
 
-# Install project dependencies
-pip install -r requirements.txt
+# Install project dependencies (no audio - recommended)
+pip install -r requirements-noaudio.txt
 
 # Verify installation
 python -c "import pipecat, baml, openai; print('Dependencies installed successfully!')"
@@ -66,6 +66,10 @@ python -c "import pipecat, baml, openai; print('Dependencies installed successfu
 **Note**: If you encounter issues with `pipecat` or `baml`, you may need to install them from their respective sources:
 
 ```bash
+# If you need audio support and encounter select module errors,
+# try installing audio dependencies separately:
+# pip install pyaudio sounddevice
+
 # For Pipechat (if not available on PyPI)
 pip install git+https://github.com/pipecat-ai/pipecat.git
 
